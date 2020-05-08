@@ -9,29 +9,21 @@
 /* Begin PBXBuildFile section */
 		DD44168B2461D276006031B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44168A2461D276006031B6 /* AppDelegate.swift */; };
 		DD44168D2461D276006031B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44168C2461D276006031B6 /* SceneDelegate.swift */; };
-		DD44168F2461D276006031B6 /* TodoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44168E2461D276006031B6 /* TodoVC.swift */; };
+		DD44168F2461D276006031B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44168E2461D276006031B6 /* ViewController.swift */; };
 		DD4416922461D276006031B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4416902461D276006031B6 /* Main.storyboard */; };
 		DD4416942461D277006031B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD4416932461D277006031B6 /* Assets.xcassets */; };
 		DD4416972461D277006031B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4416952461D277006031B6 /* LaunchScreen.storyboard */; };
-		DD4416A22461D5E6006031B6 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4416A12461D5E6006031B6 /* TodoCell.swift */; };
-		DD4416A42461D85F006031B6 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4416A32461D85F006031B6 /* Todo.swift */; };
-		DD4416A62461D8D1006031B6 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4416A52461D8D1006031B6 /* APIError.swift */; };
-		DD6BC75B2461E52A0056D28C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4416A82461D925006031B6 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DD4416872461D276006031B6 /* todo-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "todo-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD44168A2461D276006031B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD44168C2461D276006031B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD44168E2461D276006031B6 /* TodoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoVC.swift; sourceTree = "<group>"; };
+		DD44168E2461D276006031B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD4416912461D276006031B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD4416932461D277006031B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD4416962461D277006031B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD4416982461D277006031B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD4416A12461D5E6006031B6 /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
-		DD4416A32461D85F006031B6 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
-		DD4416A52461D8D1006031B6 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
-		DD4416A82461D925006031B6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,51 +56,15 @@
 		DD4416892461D276006031B6 /* todo-app */ = {
 			isa = PBXGroup;
 			children = (
-				DD4416A72461D918006031B6 /* Services */,
-				DD4416A02461D5CC006031B6 /* Model */,
-				DD44169F2461D5C8006031B6 /* View */,
-				DD44169E2461D5C1006031B6 /* Controller */,
 				DD44168A2461D276006031B6 /* AppDelegate.swift */,
 				DD44168C2461D276006031B6 /* SceneDelegate.swift */,
+				DD44168E2461D276006031B6 /* ViewController.swift */,
 				DD4416902461D276006031B6 /* Main.storyboard */,
 				DD4416932461D277006031B6 /* Assets.xcassets */,
 				DD4416952461D277006031B6 /* LaunchScreen.storyboard */,
 				DD4416982461D277006031B6 /* Info.plist */,
 			);
 			path = "todo-app";
-			sourceTree = "<group>";
-		};
-		DD44169E2461D5C1006031B6 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				DD44168E2461D276006031B6 /* TodoVC.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		DD44169F2461D5C8006031B6 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				DD4416A12461D5E6006031B6 /* TodoCell.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		DD4416A02461D5CC006031B6 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				DD4416A32461D85F006031B6 /* Todo.swift */,
-				DD4416A52461D8D1006031B6 /* APIError.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		DD4416A72461D918006031B6 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				DD4416A82461D925006031B6 /* NetworkService.swift */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,13 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD44168F2461D276006031B6 /* TodoVC.swift in Sources */,
+				DD44168F2461D276006031B6 /* ViewController.swift in Sources */,
 				DD44168B2461D276006031B6 /* AppDelegate.swift in Sources */,
 				DD44168D2461D276006031B6 /* SceneDelegate.swift in Sources */,
-				DD4416A22461D5E6006031B6 /* TodoCell.swift in Sources */,
-				DD4416A42461D85F006031B6 /* Todo.swift in Sources */,
-				DD4416A62461D8D1006031B6 /* APIError.swift in Sources */,
-				DD6BC75B2461E52A0056D28C /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
